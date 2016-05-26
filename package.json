@@ -1,0 +1,43 @@
+{
+  "name": "node-quicksand",
+  "version": "0.0.1",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "express": "^4.13.1",
+    "hbs": "^3.1.0",
+    "rc": "^1.1.6",
+    "serve-index": "^1.7.3"
+  },
+  "scripts": {
+    "lint": "eslint --fix *.js",
+    "pre-publish": "eslint --fix *.js"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "eol-last": [
+        "error",
+        "unix"
+      ],
+      "no-trailing-spaces": [
+        "error"
+      ]
+    },
+    "env": {
+      "node": true
+    }
+  },
+  "devDependencies": {
+    "eslint": "^2.10.2"
+  }
+}
